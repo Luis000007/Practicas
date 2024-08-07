@@ -21,7 +21,7 @@ class Program {
         Animal a = new Dog();
         Animal b = new Cat();
 
-        a.makeSound();
         b.makeSound();
+        a.makeSound();
     }
 }
