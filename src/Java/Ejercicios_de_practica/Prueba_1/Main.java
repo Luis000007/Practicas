@@ -19,38 +19,21 @@ public class Main {
                         6. --> Eliminar un elemento en ESPECIFICO de la lista 
                         7. --> Salir""","MENU DE OPCIONES : ",3));
 
-
-                switch (Opcion){
+                switch (Opcion) {
                     case 1 -> {
-                        try {
-                            elem = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresar el elemento:" ,
-                                    "Insertando al inicio", 3));
-                            /**LLamamos al metodo**/
-                            lista1.agregarAlInicio(elem); /**Agregar nodo**/
-                        } catch (NumberFormatException n){
-                            JOptionPane.showMessageDialog(null, "Error" + n.getMessage());
-                        }
+                        elem = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresar el elemento:" ,
+                                "Insertando al inicio", 3));
+                        lista1.agregarAlInicio(elem); /**Agregar nodo**/
                     }
 
                     case 2 -> {
-                        try {
-                            elem = Integer.parseInt (JOptionPane.showInputDialog (null, "ingresa el elemento:",
-                                    "Insertando al final",3));
-                            // llamamos al metodo
-                            lista1.agregarAlFinal(elem);
-                        } catch (NumberFormatException n) {
-                            JOptionPane.showMessageDialog (null, "Error"+   n.getMessage());
-                        }
+                        elem = Integer.parseInt (JOptionPane.showInputDialog (null, "ingresa el elemento:",
+                                "Insertando al final",3));
+                        lista1.agregarAlFinal(elem); /**Agregar nodo**/
                     }
 
                     case 3 -> {
-                        try {
-                            elem = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresar el elemento: ",
-                                    "Insertando al Inicio", 3));
-                            lista1.agregarAlFinal(elem);
-                        } catch (NumberFormatException n){
-                            JOptionPane.showMessageDialog(null,"Error" + n.getMessage());
-                        }
+                        lista1.mostrarLista(); /**Mostrar la lista**/
                     }
 
                     case 4 -> {
@@ -67,20 +50,20 @@ public class Main {
 
                     case 6 -> {
                         elem = Integer.parseInt(JOptionPane.showInputDialog(null, "Ingresa el" +
-                                "Elemento a eliminar", "Eliminando Nodo en especifico",
+                                        "Elemento a eliminar", "Eliminando Nodo en especifico",
                                 JOptionPane.INFORMATION_MESSAGE));
                         lista1.Eliminar(elem);
                         JOptionPane.showMessageDialog(null, "El elemento ELIMINADO ES:" + elem,
                                 "Eliminando Nodo en especifico", JOptionPane.INFORMATION_MESSAGE);
                     }
 
-                    case 7 -> lista1.mostrarLista();
+                    case 7 -> JOptionPane.showMessageDialog(null, "Saliendo del programa");
+
                     default -> JOptionPane.showMessageDialog(null, "Opcion incorrecta");
                 }
-            }catch (Exception e){
-                JOptionPane.showMessageDialog(null, "Errpr" + e.getMessage());
+            } catch (Exception e) {
+                JOptionPane.showMessageDialog(null, "Error" + e.getMessage());
             }
-        }while (Opcion!=3);
-
+        } while (Opcion != 7);
     }
 }
