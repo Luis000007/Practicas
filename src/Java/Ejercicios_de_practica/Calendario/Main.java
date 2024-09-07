@@ -1,9 +1,10 @@
 package Java.Ejercicios_de_practica.Calendario;
 
-import javax.swing.*;
+    import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
+        Logica logica = new Logica();
 
         int Opcion = 0;
         do {
@@ -20,35 +21,49 @@ public class Main {
 
                 switch (Opcion) {
                     case 1 -> {
+                        // Pedir al usuario que ingrese un mes para empujar
+                        String mes = JOptionPane.showInputDialog("Ingresa el mes que deseas agregar a la pila:");
+                        logica.empujarMes(logica.meses, mes); // Llamar al método con los argumentos
                     }
 
                     case 2 -> {
+                        logica.sacarMes(logica.meses); // Quitar un mes de la pila
+                        JOptionPane.showMessageDialog(null, "Mes eliminado");
                     }
 
                     case 3 -> {
+                        logica.mostrarTope(logica.meses); // Mostrar el mes en el tope de la pila
                     }
 
                     case 4 -> {
+                        // Pedir al usuario el mes que desea eliminar
+                        String mesEliminar = JOptionPane.showInputDialog("Ingresa el mes que deseas eliminar de la pila:");
+                        logica.eliminarMes(logica.meses, mesEliminar);
                     }
 
                     case 5 -> {
+                        logica.mostrarElementos(logica.meses); // Mostrar los elementos en la pila
                     }
 
                     case 6 -> {
+                        logica.verificarPilaVacia(logica.meses); // Verificar si la pila está vacía
                     }
 
                     case 7 -> {
+                        logica.mostrarTamañoPila(logica.meses); // Mostrar el tamaño de la pila
                     }
 
-                    case 8 -> JOptionPane.showMessageDialog(null, "Saliendo del programa");
+                    case 8 -> {
+                        JOptionPane.showMessageDialog(null, "Saliendo del programa...");
+                    }
 
-                    default -> JOptionPane.showMessageDialog(null, "Opcion incorrecta");
+                    default -> {
+                        JOptionPane.showMessageDialog(null, "Opción inválida, por favor elige nuevamente.");
+                    }
                 }
-            } catch (Exception e) {
-                JOptionPane.showMessageDialog(null, "Error" + e.getMessage());
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Por favor ingresa un número válido.");
             }
-        } while (Opcion != 8);
+        } while (Opcion != 8); // El ciclo se repite hasta que se elija la opción 8 (Salir)
     }
 }
-
-
