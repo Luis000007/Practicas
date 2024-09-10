@@ -1,4 +1,4 @@
-package Java.Ejercicios_de_practica.Prueba_1;
+package Java.Estructura_de_datos.pilas.Prueba_1;
 
 import javax.swing.*;
 

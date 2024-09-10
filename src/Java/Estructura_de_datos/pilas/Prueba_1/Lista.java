@@ -1,6 +1,4 @@
-package Java.Ejercicios_de_practica.Prueba_1;
-
-import com.sun.source.tree.WhileLoopTree;
+package Java.Estructura_de_datos.pilas.Prueba_1;
 
 /**Mandaremos a Llamar los nodos creados en clase nodo**/
 public class Lista { /**Debera tener cabecera y cola de la lista**/

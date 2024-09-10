@@ -1,4 +1,4 @@
-package Java.Ejercicios_de_practica.Practicas_de_pila;
+package Java.Estructura_de_datos.pilas.Practicas_de_pila;
 
 import java.util.Stack;
 

@@ -1,4 +1,4 @@
-package Java.Ejercicios_de_practica.pilas;
+package Java.Estructura_de_datos.pilas.Listas;
 
 import java.util.Stack;
 import java.util.logging.Level;
