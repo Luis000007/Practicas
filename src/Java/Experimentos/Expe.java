@@ -1,4 +1,4 @@
-package Java.Ejercicios_de_practica.Experimentos;
+package Java.Experimentos;
 
 import javax.swing.*;
 
