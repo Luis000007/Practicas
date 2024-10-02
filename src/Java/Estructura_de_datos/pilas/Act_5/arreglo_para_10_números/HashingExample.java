@@ -9,7 +9,7 @@ public class HashingExample {
         Arrays.fill(array, -1); // Inicializamos el arreglo con -1 para indicar que está vacío
 
         // Los ocho primeros múltiplos de 17, revueltos
-        int[] numeros = {51, 17, 700, 85, 34, 102, 68, 445};
+        int[] numeros = {55, 17, 34, 85, 2323, 54545, 444, 445};
 
         for (int num : numeros) {
             int posicion = num % 10; // Usamos la función hash f(x) = x % 10
