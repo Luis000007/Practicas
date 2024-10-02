@@ -3,7 +3,7 @@ package Java.Estructura_de_datos.pilas.Recursividad;
 public class Fibonacci {
     public static void main(String[] args) {
 
-        Fibonacci fibona = new Fibonacci();
+        Fibonacci fibona = new Fibonacci(); // SI
         System.out.println("La sucesion Fibonacci de 4  es: " + fibona.fibonaciRecursivo(8));
         System.out.println("La sucesion Fibinacci mediante ciclo 4 es: " + fibona.fibonaciRecursivo(8));
     }
