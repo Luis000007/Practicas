@@ -1,4 +1,4 @@
-package Java.Intermedio.Interfaces.Ejemplo1;
+package Java.Intermedio.Hilos.Interfaces.Ejemplo1;
 
 
 /*
