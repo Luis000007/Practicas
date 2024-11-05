@@ -5,14 +5,12 @@ public class Persona {
     private int edad;
     private double estatura;
 
-    // Constructor que redondea la estatura a dos decimales
     public Persona(String nombre, int edad, double estatura) {
         this.nombre = nombre;
         this.edad = edad;
-        this.estatura = Math.round(estatura * 100.0) / 100.0; // Redondea a dos decimales
+        this.estatura = Math.round(estatura * 100.0) / 100.0;
     }
 
-    // Getters y Setters
     public String getNombre() {
         return nombre;
     }
@@ -34,7 +32,7 @@ public class Persona {
     }
 
     public void setEstatura(double estatura) {
-        this.estatura = Math.round(estatura * 100.0) / 100.0; // Redondea a dos decimales
+        this.estatura = Math.round(estatura * 100.0) / 100.0;
     }
 
     // Método toString con dos decimales para estatura
@@ -43,7 +41,7 @@ public class Persona {
         return "Persona{" +
                 "nombre='" + nombre + '\'' +
                 ", edad=" + edad +
-                ", estatura=" + String.format("%.2f", estatura) + // Formato de dos decimales
+                ", estatura=" + String.format("%.2f", estatura) +
                 '}';
     }
 }

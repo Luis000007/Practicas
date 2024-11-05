@@ -23,12 +23,9 @@ public class Main {
     public static void main(String[] args) {
         List<Persona> listaOriginal = generarPersonas();
 
-        // Mostrar la lista original
         System.out.println("Lista original:");
         for (Persona persona : listaOriginal) {
             System.out.println(persona);
         }
-
-        // Resto del programa para elegir el método de ordenamiento y atributo
     }
 }
