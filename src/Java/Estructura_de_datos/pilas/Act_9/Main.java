@@ -79,6 +79,6 @@ public class Main {
             }
         } while (opciones != 6);
 
-        scanner.close(); // Cerrar el scanner al finalizar el programa
+        scanner.close();
     }
 }
