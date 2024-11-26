@@ -1,7 +1,5 @@
 package Java.Estructura_de_datos.pilas.Act_12;
 
-import java.util.*;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
